@@ -28,6 +28,13 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BtnWhatsappComponent } from './btn-whatsapp/btn-whatsapp.component';
 import { HouseOneComponent } from './products/products-house/house-one/house-one.component';
+import { HouseTwoComponent } from './products/products-house/house-two/house-two.component';
+import { HouseThreeComponent } from './products/products-house/house-three/house-three.component';
+import { HouseFourComponent } from './products/products-house/house-four/house-four.component';
+import { HouseFiveComponent } from './products/products-house/house-five/house-five.component';
+import { HouseSixComponent } from './products/products-house/house-six/house-six.component';
+import { HouseSevenComponent } from './products/products-house/house-seven/house-seven.component';
+import { HouseEichComponent } from './products/products-house/house-eich/house-eich.component';
 
 const routes: Routes = [
   {path: '', component:HomeComponent},
@@ -45,6 +52,13 @@ const routes: Routes = [
   {path: 'pets', component:PetsComponent},
   {path: 'beauty', component:BeautyComponent},
   {path: 'fit', component:FitComponent},
+  {path: 'house-two', component:HouseTwoComponent},
+  {path: 'house-three', component:HouseThreeComponent},
+  {path: 'house-four', component:HouseFourComponent},
+  {path: 'house-five', component:HouseFiveComponent},
+  {path: 'house-six', component:HouseSixComponent},
+  {path: 'house-seven', component:HouseSevenComponent},
+  {path: 'house-eich', component:HouseEichComponent},
   {path: 'house-one', component:HouseOneComponent},
  
  ]
@@ -76,7 +90,14 @@ const routes: Routes = [
     HeaderComponent,
     FooterComponent,
     BtnWhatsappComponent,
-    HouseOneComponent
+    HouseOneComponent,
+    HouseTwoComponent,
+    HouseThreeComponent,
+    HouseFourComponent,
+    HouseFiveComponent,
+    HouseSixComponent,
+    HouseSevenComponent,
+    HouseEichComponent
   ],
   imports: [
     BrowserModule,
