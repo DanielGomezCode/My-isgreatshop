@@ -27,6 +27,7 @@ import { ShopFitComponent } from './shop-fit/shop-fit.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BtnWhatsappComponent } from './btn-whatsapp/btn-whatsapp.component';
+import { HouseOneComponent } from './products/products-house/house-one/house-one.component';
 
 const routes: Routes = [
   {path: '', component:HomeComponent},
@@ -44,6 +45,7 @@ const routes: Routes = [
   {path: 'pets', component:PetsComponent},
   {path: 'beauty', component:BeautyComponent},
   {path: 'fit', component:FitComponent},
+  {path: 'house-one', component:HouseOneComponent},
  
  ]
 
@@ -73,7 +75,8 @@ const routes: Routes = [
     ShopFitComponent,
     HeaderComponent,
     FooterComponent,
-    BtnWhatsappComponent
+    BtnWhatsappComponent,
+    HouseOneComponent
   ],
   imports: [
     BrowserModule,
