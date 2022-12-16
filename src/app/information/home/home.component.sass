@@ -1,0 +1,602 @@
+/*General adjustments*/
+.home
+    padding: 30px 50px
+    background: #FFE2C0
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+/*Home-content-tiquet*/
+.home-tiquet
+    font-family: 'Barlow'
+    font-style: normal
+    font-weight: 700
+    font-size: 25px
+    line-height: 42px
+    color: #5B5B5B
+
+/*Home-content-title*/
+.home-title
+    font-family: 'Barlow'
+    font-style: normal
+    font-weight: 700
+    font-size: 60px
+    line-height: 62px
+    color: #000000
+
+/*Home-content-prices*/
+.home-prices
+    display: flex
+    align-items: center
+    
+.price-now
+    margin: 0 20px 0 0
+    font-family: 'Barlow'
+    font-style: normal
+    font-weight: 800
+    font-size: 60px
+    line-height: 96px
+    color: #000000
+
+.price-before
+    font-family: 'Barlow'
+    font-style: normal
+    font-weight: 700
+    font-size: 40px
+    line-height: 48px
+    color: #7E7E7E
+
+/*Home-content-description*/
+.home-product-description
+    margin: 20px 0
+    font-family: 'Barlow'
+    font-style: normal
+    font-weight: 700
+    font-size: 20px
+    line-height: 25px
+    color: #5B5B5B
+
+/*Home-content-btn*/
+.home-products-btn
+    display: flex
+    align-items: center
+
+.home-product-buy-now
+    margin-right: 20px
+    display: inline-block
+    padding: 15px 40px
+    background: black
+    color: white
+    font-size: 18px
+    box-shadow: 2px 2px 50px 10px rgba(0, 0, 0, 0.25)
+
+.home-product-info
+    display: inline-block
+    padding: 15px 40px
+    background: white
+    color: black
+    font-size: 18px
+    font-weight: 600
+    box-shadow: 2px 2px 50px 10px rgba(0, 0, 0, 0.25)
+
+/*Home-Product-IMG*/
+.home-product-img img
+    width: 550px
+
+/*MEDIA QUIERES HOME (MINI-DESKTOP) */
+@media screen and (max-width: 1170px)
+    .home
+        margin: 0
+        justify-content: inherit
+        align-items: none
+        flex-flow: row wrap
+
+    .home-content
+        text-align: center
+        width: 100%
+        order: 2
+
+    .home-product-img
+        width: 100%
+        text-align: center
+        order: 1
+
+    .home-product-img img
+        width: 400px
+
+    .home-title, .home-product-description
+        padding: 0 50px
+
+    .home-prices, .home-products-btn
+        justify-content: center
+
+
+/*MEDIA QUIERES HOME (TABLET)    
+@media screen and (max-width: 910px)
+
+    .home-title
+        font-size: 50px
+        line-height: 45px
+
+    .price-now
+        font-size: 40px
+    
+    .price-before
+        font-size: 22px
+    
+    .home-product-description
+        margin: 0 0 20px 0
+    
+    .home-product-img img
+        width: 300px
+
+/*MEDIA QUIERES HOME (MOVIL)
+
+@media screen and (max-width: 750px)
+    .home
+        padding: 10px
+
+    .home-tiquet
+        font-size: 18px
+
+    .home-title
+        padding: 0
+        font-size: 30px
+        line-height: 25px
+
+    .price-now
+        font-size: 30px
+        line-height: 60px
+    
+    .price-before
+        font-size: 22px
+    
+    .home-product-description
+        margin: 0 0 20px 0
+        font-size: 16px
+        padding: 0
+
+    .home-products-btn
+        justify-content: space-evenly
+
+    .home-product-buy-now
+        margin: 10px 0
+        font-size: 14px
+        padding: 10px 20px
+
+    .home-product-info
+        margin: 10px 0
+        font-size: 14px
+        padding: 10px 20px
+    
+    .home-product-img img
+        width: 300px
+
+/*-----------------------CALL-TO-ACTION------------------------*/
+    
+/*General*/
+.action-one
+    color: white
+    background: black
+    padding: 30px 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+/*Contenedores*/
+.action-info
+    display: flex
+    align-items: center
+
+#action-icon
+    font-size: 30px
+    color: black
+    padding: 20px
+    border-radius: 50px
+    background: white
+
+#action-icon:last-child
+    padding: 20px 25px
+
+.action-info-text
+    padding: 20px
+
+.action-info-text:first-child
+    text-align: right
+
+.action-info-text h2
+    font-size: 26px
+    font-weight: 700
+
+.action-info-text p
+    font-size: 18px
+    padding-top: 5px
+
+/*MEDIA QUIERES*/
+@media screen and (max-width:950px)
+    .action-one
+        flex-direction: column
+    
+    .action-info
+        flex-direction: column
+        text-align: center
+        margin: 20px 0
+
+    .action-info-text p
+        margin-top: 20px
+
+    .action-info-text:first-child
+        order: 1
+        text-align: center
+
+
+/*------------INVITATION TO SHOP--------------*/
+
+/* General */
+.action-two
+    transition: 0
+    background: black
+    padding: 30px 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+/* General-Info */
+.action-two-info h2
+    font-size: 40px
+    font-weight: 700
+    padding-bottom: 5px
+    color: white
+
+.action-two-info p
+    color: white
+
+/* General-Btn */
+.action-two a
+    display: inline-block
+    padding: 15px 40px
+    background: white
+    color: black
+    font-weight: 600
+    transition: .2s ease
+
+.action-two a:hover
+    background: orange
+    color: white
+    font-size: 18px
+    transition: .2s ease
+
+/* MEDIA QUIERIES */
+@media screen and (max-width:950px)
+    .action-two
+        flex-direction: column
+        text-align: center
+    
+    .action-two-info h2
+        font-size: 30px
+        padding-bottom: 20px
+        
+    .action-two a
+        margin-top: 30px
+
+/*------------CATEGORIES/LINKS--------------*/
+
+/*General*/
+.categories-home
+    padding: 30px 50px
+
+.categories-home h2
+    text-align: center
+    font-family: 'Barlow'
+    font-style: normal
+    font-weight: 700
+    font-size: 60px
+    line-height: 72px
+    text-align: center
+    color: #000000
+
+.categories-home hr
+    border: 3px solid black
+    width: 300px
+    margin: 20px auto
+
+/* Targets */
+.categories-links
+    display: grid
+    grid-template-columns: auto auto auto auto auto
+    align-items: center
+
+.categories-box
+    width: 220px
+    margin: 0 10px
+    background-color: #ECECEC
+    text-align: center
+    display: flex
+    flex-direction: column
+
+/* Targets IMG */
+$imagen-fondo-home: url("../../../assets/img/home-carousel.png")
+$imagen-fondo-tech: url("../../../assets/img/tech-carousel.png")
+$imagen-fondo-pets: url("../../../assets/img/pets-carousel.png")
+$imagen-fondo-beauty: url("../../../assets/img/beauty-carousel.png")
+$imagen-fondo-fitness: url("../../../assets/img/fitness-carousel.png")
+
+.categories-box-img
+    background-color: black
+    background-position: center
+    background-size: cover
+    height: 200px
+
+.categories-box-img.house
+    background-image: $imagen-fondo-home
+
+.categories-box-img.tech
+    background-image: $imagen-fondo-tech
+
+.categories-box-img.pets
+    background-image: $imagen-fondo-pets
+
+.categories-box-img.beauty
+    background-image: $imagen-fondo-beauty
+
+.categories-box-img.fit
+    background-image: $imagen-fondo-fitness
+
+/* Targets TEXT*/
+.categories-box-text
+    padding: 20px 0
+
+.categories-box-text i
+    font-size: 35px
+    color: black
+
+.categories-box-text h3
+    padding: 10px 0
+    font-size: 22px
+    font-weight: 700
+
+.categories-box-text ul li
+    margin: 5px 0
+
+/* Targets BTN*/
+.categories-box-btn
+    margin-top: 10px
+    display: inline-block
+    padding: 10px 30px
+    color: white
+    text-transform: uppercase
+    border-radius: 30px
+    font-weight: 700
+
+.categories-box-btn.house
+    background: linear-gradient(90deg, #00F260 0%, #0575E6 100%)
+
+.categories-box-btn.tech
+    background: linear-gradient(90deg, #0F2027 0%, #203A43 50%, #2C5364 100%)
+
+.categories-box-btn.pets
+    background: linear-gradient(90deg, #000000 0%, #0F9B0F 100%)
+
+.categories-box-btn.beauty
+    background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%)
+
+.categories-box-btn.fit
+    background: linear-gradient(90deg, #C21500 0%, #FFC500 100%)
+
+/*MEDIA QUIERES (DESKTOP)*/
+@media screen and (max-width:1400px)
+    .categories-links
+        grid-template-columns: auto auto auto
+        justify-content: center
+        
+    .categories-box
+        margin: 10px
+
+/*MEDIA QUIERES (TABLET)*/
+@media screen and (max-width:750px)
+    .categories-home h2
+        font-size: 40px
+        line-height: 40px
+    
+    .categories-links
+        grid-template-columns: auto auto
+
+/*MEDIA QUIERES (MOVIL)*/
+@media screen and (max-width:520px)
+    .categories-home h2
+        font-size: 30px
+        line-height: 30px
+
+    .categories-home hr
+        width: 200px
+        border: 1px solid black
+    
+    .categories-links
+        grid-template-columns: auto 
+
+/*-------------FORM/COMMENTS---------------*/
+
+/*Contact*/
+
+$image-form: url('../../../assets/img/comments-home.png')
+
+/* Form GENERAL */
+.form-home
+    padding: 50px 100px
+    background: linear-gradient(90deg, #C21500 0%, #FFC500 100%)
+
+.form-container
+    width: 100%
+    height: 600px
+    background-color: white
+    display: flex
+    justify-content: space-between
+
+/* Form IMG */   
+.form-img
+    width: 50%
+    background-image: $image-form
+    background-position: center
+    background-size: cover
+
+/* Form TEXT */
+.form-text
+    width: 50%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    padding: 20px
+
+.form-text h3
+   padding: 20px 0
+   font-weight: 800
+   font-size: 50px
+   line-height: 45px
+   text-align: center 
+
+.form-text form
+    padding: 20px
+
+.form-text form input[type="text"], .form-text form input[type="email"]
+    border: none
+    border-bottom: 1px solid #ccc
+    padding: 10px 0
+    outline: none
+    width: 100%
+    margin-bottom: 10px
+    color: black
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.5px
+
+.form-text form textarea
+  border: none
+  border-bottom: 1px solid #ccc
+  padding: 10px 0
+  outline: none
+  width: 100%
+  max-width: 100%
+  max-height: 88px
+  min-height: 88px
+  color: #979797
+  margin-bottom: 10px
+  font-size: 16px
+  font-weight: 400
+  letter-spacing: 0
+
+.form-text form p
+  display: none
+  color: #ff0000
+  font-size: 14px
+  margin-top: -10px
+  margin-bottom: 10px
+
+.form-text form .form-error-name-none.error
+    display: block
+
+.form-text form .form-error-name.error
+    display: block
+
+.form-text form .form-error-message-none.error
+    display: block
+
+.form-text form input[type="submit"]
+  width: 100%
+  border: none
+  padding: 8px
+  background: orange
+  color: #fff
+  font-size: 16px
+  font-weight: 600
+  letter-spacing: 0.5px
+  cursor: pointer
+  transition: all .5s ease
+
+
+.form-text form input[type="submit"]:hover
+    background-color: black
+    transition: 0.5s ease-in-out
+
+/* Form MEDIA QUIERES */
+@media screen and (max-width: 960px)
+    .form-img
+        display: none
+
+    .form-text
+        width: 100%
+
+@media screen and (max-width: 650px)
+    .form-home
+        padding: 30px
+    
+    .form-text h3
+        font-size: 35px
+        line-height: 30px
+
+
+/*------------FEATURED PRODUCRS--------------*/
+.shop.container
+    padding: 50px 150px
+
+
+.section-title
+    font-size: 40px
+    font-weight: 800
+    text-align: center
+    margin-bottom: 2.5rem
+
+
+
+/* Shop content */
+.shop-content
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto))
+    gap: 1.5rem
+
+.product-box
+    text-align: center
+
+.product-box:hover
+    padding: 2px
+    border: 1px solid black
+    transition: 0.4s
+
+
+.product-img
+    width: 200px
+    height: auto
+    margin-bottom: 0.5rem
+
+.product-title
+    text-align: center
+    font-size: 1.1rem
+    font-weight: 600
+    text-transform: uppercase
+    margin-bottom: 1.5rem
+
+.product-table
+    display: flex
+    justify-content: space-between
+
+.price
+    font-weight: 500
+
+
+.add-cart
+    bottom: 0
+    right: 0
+    background-color: orange
+    color: white
+    padding: 10px
+    cursor: pointer
+
+
+.add-cart:hover
+    background-color: black
+    transition: 0.4s
+
+@media screen and (max-width: 550px)
+    .shop.container
+        padding: 50px
+
