@@ -26,6 +26,7 @@ import { ShopBeautyComponent } from './shop-beauty/shop-beauty.component';
 import { ShopFitComponent } from './shop-fit/shop-fit.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { BtnWhatsappComponent } from './btn-whatsapp/btn-whatsapp.component';
 
 const routes: Routes = [
   {path: '', component:HomeComponent},
@@ -71,7 +72,8 @@ const routes: Routes = [
     ShopBeautyComponent,
     ShopFitComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BtnWhatsappComponent
   ],
   imports: [
     BrowserModule,
