@@ -16,6 +16,7 @@
 
 .product-img img
     width: 550px
+    cursor: pointer
 
 .product-information
     padding: 0 40px
@@ -125,3 +126,37 @@
 
     .product-btn-triidy
         margin: 10px 0 0 0
+
+
+/* LIGHTBOX */
+.product-lightbox
+    position: fixed
+    width: 100%
+    height: 100vh
+    top: 0
+    display: none
+    justify-content: center
+    align-items: center
+    background-color: #000000ad
+
+.product-lightbox.active
+    display: flex
+
+.lightbox-container img
+    width: 600px
+
+.close-lightbox
+    position: absolute
+    top: 20px
+    right: 20px
+    color: white
+    font-size: 30px
+    cursor: pointer
+
+@media screen and (max-width: 850px)
+    .lightbox-container img
+        width: 500px
+    
+@media screen and (max-width: 580px)
+    .lightbox-container img
+        width: 300px

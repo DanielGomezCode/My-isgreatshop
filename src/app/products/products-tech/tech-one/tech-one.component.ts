@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tech-one',
   templateUrl: './tech-one.component.html',
   styleUrls: ['./tech-one.component.sass']
 })
-export class TechOneComponent {
+export class TechOneComponent implements OnInit {
+ constructor() { }
 
+ ngOnInit(): void {
+  var lightBox = document.getElementsByClassName('product-lightbox')[0]
+  var closeLightbox = document.getElementsByClassName('close-lightbox')[0]
+  var openLightbox = document.getElementsByClassName('open-lightbox')[0]
+
+  openLightbox.addEventListener('click', function(){
+    lightBox.classList.add('active')
+  })
+  closeLightbox.addEventListener('click', function(){
+    lightBox.classList.remove('active')
+  })
+ }
 }
