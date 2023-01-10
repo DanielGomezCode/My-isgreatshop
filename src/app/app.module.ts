@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router'
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './information/home/home.component';
@@ -202,7 +204,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     RouterModule
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
